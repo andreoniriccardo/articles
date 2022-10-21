@@ -6,6 +6,7 @@ File: main.py
 """
 
 import matplotlib.pyplot as plt
+plt.style.use('seaborn-whitegrid')
 import tensorflow as tf
 
 def load_my_data():
@@ -41,24 +42,38 @@ def main():
     
        
     # Define the optimizers to test
-    my_optimizers = {"Mini-batch GD":tf.keras.optimizers.SGD(learning_rate = 0.01, momentum = 0.0),
-                     "Momentum GD":tf.keras.optimizers.SGD(learning_rate = 0.01, momentum = 0.9),
-                     "RMS Prop":tf.keras.optimizers.RMSprop(learning_rate = 0.01, rho = 0.9),
-                     "Adam":tf.keras.optimizers.Adam(learning_rate = 0.01, beta_1 = 0.9, beta_2 = 0.999)
+    my_optimizers = {"Mini-batch GD":tf.keras.optimizers.SGD(learning_rate = 0.001, momentum = 0.0),
+                     "Momentum GD":tf.keras.optimizers.SGD(learning_rate = 0.001, momentum = 0.9),
+                     "RMS Prop":tf.keras.optimizers.RMSprop(learning_rate = 0.001, rho = 0.9),
+                     "Adam":tf.keras.optimizers.Adam(learning_rate = 0.001, beta_1 = 0.9, beta_2 = 0.999)
         }
     
-    histories = []
+    histories = {}
     for optimizer_name, optimizer in my_optimizers.items():
         # Define a neural network
+        
         my_network = tf.keras.models.Sequential([
-                    tf.keras.layers.Flatten(),
-                    tf.keras.layers.Dense(512, activation='elu'),
-                    tf.keras.layers.Dense(256, activation='elu'),
-                    tf.keras.layers.Dense(128, activation='elu'),
-                    tf.keras.layers.Dense(64, activation='elu'),
+                    tf.keras.layers.Flatten(input_shape=(28, 28)),                    
+                    tf.keras.layers.Dense(128, activation='relu'),
+                    tf.keras.layers.Dense(64, activation='relu'),
                     tf.keras.layers.Dense(10, activation='softmax')
                     ])
         
+        """
+        my_network = tf.keras.models.Sequential([
+                    tf.keras.layers.Conv2D(64, (3,3), activation='relu', kernel_initializer='he_normal', input_shape=(28, 28, 1)),
+                    tf.keras.layers.MaxPooling2D(2, 2),
+                    tf.keras.layers.Conv2D(128, (3,3), activation='relu'),
+                    tf.keras.layers.MaxPooling2D(2,2),
+                    tf.keras.layers.Conv2D(64, (3,3), activation='relu'),
+                    tf.keras.layers.MaxPooling2D(2,2),
+                    tf.keras.layers.Flatten(),
+                    tf.keras.layers.Dropout(0.3),
+                    tf.keras.layers.Dense(512, activation='relu'),
+                    tf.keras.layers.Dense(128, activation='relu'),
+                    tf.keras.layers.Dense(10, activation='softmax')            
+            ])
+        """
         # Compile the model
         my_network.compile(optimizer=optimizer,
                            loss='sparse_categorical_crossentropy', # since labels are more than 2 and not one-hot-encoded
@@ -66,10 +81,19 @@ def main():
     
         # Train the model
         print('Training the model with optimizer {}'.format(optimizer_name))
-        history = my_network.fit(X_train, y_train, epochs=8, validation_split=0.1, verbose=1)
-        histories.append(history)
+        histories[optimizer_name] = my_network.fit(X_train, y_train, epochs=50, validation_split=0.1, verbose=1)
     
+    # Plot learning curves
+    for optimizer_name, history in histories.items():
+        loss = history.history['loss']
+        epochs = range(1,len(loss)+1)
+        plt.plot(epochs, loss, label=optimizer_name)
+        plt.legend(loc="upper right")
+        plt.xlabel("Epoch")
+        plt.ylabel("Loss")
+        plt.savefig('images/training_loss_comparison_denseNN.png', format='png', dpi=1200)
         
+    plt.show()
     
 if __name__ == '__main__':
     main()
