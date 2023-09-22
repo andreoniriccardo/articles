@@ -121,15 +121,9 @@ def RNN_forward_prop_step(parameters, a_prev, x):
     b = parameters['b']
 
     # Compute hidden state
-    # a_next = np.tanh(np.dot(W_ax, x) + np.dot(W_aa, a_prev) + b)
+    a_next = np.tanh(np.dot(W_ax, x) + np.dot(W_aa, a_prev) + b)
     part_1 = np.dot(W_ax, x)
-    # print(type(W_aa))
-    # print(type(a_prev))
-    # print(W_aa.dtype)
-    # print(a_prev.dtype)
-    part_2 = np.dot(W_aa, a_prev)
-    a_next = np.tanh(part_1 + part_2 + b)
-
+    
     # Compute log probabilities for next character
     p_t = softmax(np.dot(W_ya, a_next) + b_y)
 
@@ -318,7 +312,8 @@ def train_model(data, n_a=50, max_iter = 40000):
     # Get current loss function value
     loss_now = get_initial_loss(vocab_size, len(data))
 
-
+    loss_array = []
+    loss_array.append(loss_now)
 
     # Perform max_iter iteration to train the model's parameters
     for iter in range(max_iter):
@@ -348,6 +343,7 @@ def train_model(data, n_a=50, max_iter = 40000):
         # for k in parameters.keys():
         #     print('{}: tipo {}, Datatype {}'.format(k, type(parameters[k]), parameters[k].dtype))
         loss_now = smooth(loss_now, loss_tmp)
+        loss_array.append(loss_now)
 
         # For every 1000 gens, print loss and generate names:
         if iter % 1000 == 0:
@@ -357,4 +353,4 @@ def train_model(data, n_a=50, max_iter = 40000):
             last_fantasy_name = get_sample(sampled_indices, encoding_to_chars)
             print(last_fantasy_name.replace('\n', ''))
 
-    return parameters
+    return parameters, loss_array
