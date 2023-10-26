@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-10-26T12:34:58.991Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="pQzS_nMPKQg5mvX7cS6e" version="21.7.5" type="device">
+<mxfile host="Electron" modified="2023-10-26T11:08:09.374Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="QgXl5siUNEWUNd9_dMr8" version="21.7.5" type="device">
   <diagram name="Pagina-1" id="Lw8gnWpmZgrCEJIqLmGG">
     <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -50,9 +50,6 @@
               <mxPoint x="660" y="160" />
             </Array>
           </mxGeometry>
-        </mxCell>
-        <mxCell id="n571CwM6qqDmZCjy4yoN-11" value="Outlier Detection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#0000FF;fontStyle=1;fontSize=22;strokeWidth=3;" vertex="1" parent="1">
-          <mxGeometry x="320" y="480" width="200" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
