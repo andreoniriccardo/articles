@@ -1,0 +1,122 @@
+<mxfile host="Electron" modified="2023-11-27T11:11:43.540Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="JkuGVVGZNmvmmyiUmEQD" version="21.7.5" type="device">
+  <diagram name="Pagina-1" id="Lw8gnWpmZgrCEJIqLmGG">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n571CwM6qqDmZCjy4yoN-1" value="Neural Network Regularization" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#0000FF;fontStyle=1;fontSize=22;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="320" y="40" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n571CwM6qqDmZCjy4yoN-2" value="L1 Regularization" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#0000FF;fontStyle=1;fontSize=18;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="60" y="200" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n571CwM6qqDmZCjy4yoN-3" value="&lt;div&gt;Pros:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Induces sparsity, promoting model simplification&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Facilitates feature selection&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Well-suited where a sparse model is desirable&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Cons:&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;May struggle with correlated features&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Prone to instability in the presence of outliers&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Computationally demanding&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#0000FF;fontStyle=1;fontSize=18;align=center;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="60" y="240" width="220" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="n571CwM6qqDmZCjy4yoN-4" value="L2 Regularization" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#0000FF;fontStyle=1;fontSize=18;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="310" y="200" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n571CwM6qqDmZCjy4yoN-6" value="Dropout" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#0000FF;fontStyle=1;fontSize=18;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="560" y="200" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n571CwM6qqDmZCjy4yoN-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="n571CwM6qqDmZCjy4yoN-1" target="n571CwM6qqDmZCjy4yoN-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="590" as="sourcePoint" />
+            <mxPoint x="400" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="160" />
+              <mxPoint x="170" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n571CwM6qqDmZCjy4yoN-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" parent="1" source="n571CwM6qqDmZCjy4yoN-1" target="n571CwM6qqDmZCjy4yoN-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="390" as="sourcePoint" />
+            <mxPoint x="440" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n571CwM6qqDmZCjy4yoN-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="n571CwM6qqDmZCjy4yoN-1" target="n571CwM6qqDmZCjy4yoN-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="130" as="sourcePoint" />
+            <mxPoint x="190" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="160" />
+              <mxPoint x="670" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n571CwM6qqDmZCjy4yoN-11" value="Outlier Detection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FF0000;fontStyle=1;fontSize=22;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="320" y="1180" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n571CwM6qqDmZCjy4yoN-12" value="Outlier Removal" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FF0000;fontStyle=1;fontSize=18;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="200" y="1340" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n571CwM6qqDmZCjy4yoN-13" value="&lt;span style=&quot;font-weight: 400; background-color: initial;&quot;&gt;Outliers might:&lt;br&gt;&lt;/span&gt;&lt;ul style=&quot;font-size: 18px;&quot;&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400; background-color: initial;&quot;&gt;Outliers obscure meaningful patterns&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Distort the learning process&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Affect algorithm&#39;s accuracy and reliability&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FF0000;fontStyle=1;fontSize=18;align=left;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="200" y="1380" width="200" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="n571CwM6qqDmZCjy4yoN-14" value="Anomaly Detection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FF0000;fontStyle=1;fontSize=18;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="440" y="1340" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n571CwM6qqDmZCjy4yoN-15" value="&lt;ul style=&quot;font-size: 18px;&quot;&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Fraud Detection&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Network Security&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Manufacturing Quality Control&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Predictive Maintenance&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;...&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#FF0000;fontStyle=1;fontSize=18;align=left;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="440" y="1380" width="200" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="n571CwM6qqDmZCjy4yoN-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" target="n571CwM6qqDmZCjy4yoN-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="1260" as="sourcePoint" />
+            <mxPoint x="660" y="1340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="1300" />
+              <mxPoint x="540" y="1300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n571CwM6qqDmZCjy4yoN-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="n571CwM6qqDmZCjy4yoN-11" target="n571CwM6qqDmZCjy4yoN-12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="1270" as="sourcePoint" />
+            <mxPoint x="550" y="1350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="1300" />
+              <mxPoint x="300" y="1300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x3_tDl0WR2Pwahdw6oum-1" value="&lt;div&gt;Pros:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Promotes smoother models&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;More robust to outliers&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Stable for correlated features&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Cons:&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Doesn&#39;t induce sparsity&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;May struggle when feature selection is crucial&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Computationally demanding&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#0000FF;fontStyle=1;fontSize=18;align=center;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="310" y="240" width="220" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="x3_tDl0WR2Pwahdw6oum-2" value="&lt;div&gt;Pros:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Effectively prevents overfitting&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Enhances model generalization&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Act as a form of ensemble learning&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Cons:&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Increases training time&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Requires tuning the dropout rate&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Introduces a stochastic element&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#0000FF;fontStyle=1;fontSize=18;align=center;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="560" y="240" width="220" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="x3_tDl0WR2Pwahdw6oum-4" value="Bias" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#0000FF;fontStyle=1;fontSize=18;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="160" y="760" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="x3_tDl0WR2Pwahdw6oum-5" value="Variance" style="rounded=0;html=1;fillColor=#f8cecc;strokeColor=#FF0000;fontStyle=1;fontSize=22;strokeWidth=3;rotation=270;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="940" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="x3_tDl0WR2Pwahdw6oum-7" value="Low" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="160" y="800" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="x3_tDl0WR2Pwahdw6oum-9" value="High" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="280" y="800" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="x3_tDl0WR2Pwahdw6oum-10" value="High" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=16;fontStyle=1;rotation=270;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1000" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="x3_tDl0WR2Pwahdw6oum-11" value="Low" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=16;fontStyle=1;rotation=270;" vertex="1" parent="1">
+          <mxGeometry x="80" y="880" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="x3_tDl0WR2Pwahdw6oum-12" value="Valid model" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="160" y="840" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="x3_tDl0WR2Pwahdw6oum-13" value="Poor performance of both validation and training sets" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="280" y="840" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="x3_tDl0WR2Pwahdw6oum-14" value="Overfitted model" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="160" y="960" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="x3_tDl0WR2Pwahdw6oum-16" value="Poor performance of both validation and training sets" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="280" y="960" width="120" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
